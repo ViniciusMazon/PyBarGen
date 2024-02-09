@@ -9,7 +9,7 @@ Update requirements:
 `.venv/bin/pip3 freeze > requirements.txt`
 
 Run project
-`python3 run_raw.py`
+`python3 run.py`
 
 # Endpoints
 ```bash
