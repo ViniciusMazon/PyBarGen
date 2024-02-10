@@ -1,17 +1,30 @@
+# About
+An API that generates a PNG barcode based on a provided product code
+
+# Techs
+* Python
+* Flask
+* Barcode
+* Cerberus
+* PyTest
+* Venv
+* PyLint
+* PreCommit
+
 # Commands
-Activate venv
+* Activate venv
 `source .venv/bin/activate`
 
-Verify venv
+* Verify venv
 `which python`
 
-Update requirements:
+* Update requirements:
 `.venv/bin/pip3 freeze > requirements.txt`
 
-Run project
+* Run project
 `python3 run.py`
 
-Run tests
+* Run tests
 'pytest -s -v'
 
 # Endpoints
