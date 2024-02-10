@@ -11,6 +11,9 @@ Update requirements:
 Run project
 `python3 run.py`
 
+Run tests
+'pytest -s -v'
+
 # Endpoints
 ```bash
 curl -X POST \
