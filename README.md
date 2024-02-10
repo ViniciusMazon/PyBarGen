@@ -1,4 +1,6 @@
 # About
+![PyBarGen](./docs/PyBarGen.png)
+<br>
 An API that generates a PNG barcode based on a provided product code
 
 # Techs
