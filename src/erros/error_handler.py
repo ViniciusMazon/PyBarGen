@@ -1,9 +1,21 @@
 from src.views.http_types.http_response import HttpResponse
+from src.erros.error_types.http_unprocessable_entity import HttpUnprocessableEntityError
 
 def handle_errors(error: Exception) -> HttpResponse:
+    if isinstance(error, HttpUnprocessableEntityError):
+        return HttpResponse(status_code=error.status_code, body={
+            "errors": [{
+                "title": error.name,
+                "detail": error.message,
+                "status_code": error.status_code
+            }]
+        })
+
+
     return HttpResponse(status_code=500, body={
         "errors": [{
             "title": "Internal Server Error",
-            "detail": str(error)
+            "detail": str(error),
+            "status_code": 500
         }]
     })
