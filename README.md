@@ -25,7 +25,7 @@ An API that generates a PNG barcode based on a provided product code
 `python3 run.py`
 
 * Run tests
-'pytest -s -v'
+`pytest -s -v`
 
 # Endpoints
 ```bash
